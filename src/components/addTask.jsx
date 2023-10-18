@@ -8,7 +8,7 @@ export default function AddTask() {
 //   }
 
   return (
-    <div>
+    <>
       <input
         // onChange={handleInput}
         type="text"
@@ -17,6 +17,6 @@ export default function AddTask() {
         placeholder="Add your task..."
       />
       <button type="submit">Add</button>
-    </div>
+    </>
   );
 }
