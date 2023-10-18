@@ -1,5 +1,6 @@
 import AddTask from "./components/addTask.jsx"
 import ToDoList from "./components/ToDoList"
+import { useState } from "react"
 
 // Dieses Array an Objekten kann zum Testen verwendet werden.
 // Rick: Objekte hinzufügen
@@ -22,17 +23,18 @@ const myTestObjects = [
 
 
 function App() {
+  const [myObjects, setMyObjects] = useState(myTestObjects)
   return (
     <div className="container">
       <div className="todo-app">
         <h2>To-Do List</h2>
-        <div class="row">
+        <div className="row">
           <AddTask />
           {/* <input type="text" id="input-box" placeholder="Add your text" /> */}
             {/*Rick:    <input type="text" id="input-box" placeholder="Add your text">
             <button onclick="addTask()">Add</button>*/}
         </div>
-        <ToDoList myObjects={myTestObjects} />
+        <ToDoList myObjects={myObjects} setMyObjects={setMyObjects} />
         {/*Nora    <ul id="list-container">
 
             </ul>*/}
