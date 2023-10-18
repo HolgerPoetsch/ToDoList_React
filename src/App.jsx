@@ -1,3 +1,4 @@
+import AddTask from "./components/addTask.jsx"
 import ToDoList from "./components/ToDoList"
 
 // Dieses Array an Objekten kann zum Testen verwendet werden.
@@ -25,6 +26,10 @@ function App() {
     <div className="container">
       <div className="todo-app">
         <h2>To-Do List</h2>
+          <div class="row">
+            <AddTask />
+/*Rick:    <input type="text" id="input-box" placeholder="Add your text">
+
         <div className="row">
           {/*Rick:    <input type="text" id="input-box" placeholder="Add your text">
             <button onclick="addTask()">Add</button>*/}
