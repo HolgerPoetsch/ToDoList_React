@@ -1,25 +1,22 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-function addTask() {
+export default function AddTask() {
+//   const [task, setTask] = useState();
 
-const [task, setTask] = useState(); 
+//   function addToList(e) {
+//     e.preventDefault();
+//   }
 
-function addToList(e) {
-    e.preventDefault(); 
+  return (
+    <div>
+      <input
+        // onChange={handleInput}
+        type="text"
+        name="name"
+        id="input-box"
+        placeholder="Add your task..."
+      />
+      <button type="submit">Add</button>
+    </div>
+  );
 }
-
-    return (
-        <>
-            <input 
-                onChange={handleInput}
-                type="text"
-                name="name"
-                id="input-box"
-                placeholder="Add your task..."
-            />
-            <button type="submit">Add</button>
-        </>
-    )
-}; 
-
-export default addTask 

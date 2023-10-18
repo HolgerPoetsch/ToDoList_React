@@ -1,4 +1,4 @@
-import addTask from "./components/addTask.jsx"
+import AddTask from "./components/addTask.jsx"
 
 function App() {
   return (
@@ -6,7 +6,7 @@ function App() {
       <div class="todo-app">
         <h2>To-Do List</h2>
           <div class="row">
-            <addTask />
+            <AddTask />
 {/*Rick:    <input type="text" id="input-box" placeholder="Add your text">
             <button onclick="addTask()">Add</button>*/}
             </div>
