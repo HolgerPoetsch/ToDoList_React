@@ -1,11 +1,12 @@
-import React from 'react'
 
-function ClearAllBtn() {
+
+function ClearAllBtn({myObjects, setMyObjects}) {
   return (
     <div>
-        <div id="todo-delete">
-          <button id="delete-button">Delete All</button>
-          </div>
+      <div className="todo-delete">
+      <button className="delete-button" onClick={() => setMyObjects([])} >
+        Delete All</button>
+      </div>
     </div>
   )
 }
