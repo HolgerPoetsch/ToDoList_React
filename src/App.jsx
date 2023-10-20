@@ -1,4 +1,4 @@
-import AddTask from "./components/addTask.jsx"
+import NewTask from "./components/NewTask.jsx"
 import ToDoList from "./components/ToDoList"
 import { useState } from "react"
 
@@ -29,7 +29,7 @@ function App() {
       <div className="todo-app">
         <h2>To-Do List</h2>
         <div className="row">
-          <AddTask />
+          <NewTask myObjects={myObjects} setMyObjects={setMyObjects}/>
           {/* <input type="text" id="input-box" placeholder="Add your text" /> */}
             {/*Rick:    <input type="text" id="input-box" placeholder="Add your text">
             <button onclick="addTask()">Add</button>*/}
