@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function NewTask () {
+function AddTask () {
   const [textinput, setTextinput] = useState(""); 
 
   const changeText = (e) => {
@@ -24,4 +24,4 @@ function NewTask () {
     </>
   );
 }
-export default NewTask;
+export default AddTask;

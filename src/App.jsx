@@ -1,4 +1,4 @@
-import NewTask from "./components/NewTask.jsx"
+import NewTask from "./components/AddTask.jsx"
 import ToDoList from "./components/ToDoList"
 import { useState } from "react"
 
