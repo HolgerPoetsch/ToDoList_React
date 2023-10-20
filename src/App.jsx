@@ -1,5 +1,6 @@
 import NewTask from "./components/AddTask.jsx"
 import ToDoList from "./components/ToDoList"
+import ClearAllBtn from "./components/ClearAllBtn"
 import { useState } from "react"
 
 // Dieses Array an Objekten kann zum Testen verwendet werden.
@@ -39,9 +40,9 @@ function App() {
 
             </ul>*/}
       </div>
-      {/*Holger <div id="todo-delete">
-          <button id="delete-button">Delete All</button>
-          </div>*/}
+        <div>
+        <ClearAllBtn myObjects={myObjects} setMyObjects={setMyObjects}/>
+        </div>
     </div>
   )
 }
