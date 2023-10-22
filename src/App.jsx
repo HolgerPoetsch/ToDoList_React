@@ -7,6 +7,12 @@ import { useState } from "react"
 // Rick: Objekte hinzufügen
 // Holger: Objekte löschen
 // Nora: Objekte anzeigen und bearbeiten
+
+//Nora muss hier noch was überarbeiten:
+/* localStorage.setItem("something", JSON.stringify({task: "Staubsaugen", status: true}))
+const currentStorage = {...localStorage}
+console.log(currentStorage) */
+
 const myTestObjects = [
   {
     task: "Staubsaugen",
