@@ -1,12 +1,11 @@
 import { useState } from "react"
 
 export default function ToDoList({ myObjects, setMyObjects }) {
-
     return (
         <>
             <h3>My ToDos</h3>
             <ul id="list-container">
-                {myObjects.map((obj) => <ItemBuilder key={obj.task} obj={obj} myObjects={myObjects} setMyObjects={setMyObjects} />)}
+                {myObjects.map((obj) => <ItemBuilder key={obj.id} obj={obj} myObjects={myObjects} setMyObjects={setMyObjects} />)}
             </ul>
         </>
     )
@@ -18,7 +17,8 @@ function ItemBuilder({ obj, myObjects, setMyObjects }) {
     const [inputEdit, setInputEdit] = useState(null);
 
     function deleteListItem(obj, myObjects, setMyObjects) {
-        setMyObjects(myObjects.filter((element) => element.task !== obj.task))
+        setMyObjects(myObjects.filter((element) => element.id !== obj.id))
+        localStorage.removeItem(obj.id)
     }
 
     function editListItem(obj, myObjects, setMyObjects) {
