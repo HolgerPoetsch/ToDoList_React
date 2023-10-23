@@ -9,7 +9,9 @@ function AddTask({ myObjects, setMyObjects }) {
 
   const handleOnClick = () => {
     // const newTodos = [...todos, {task : textinput, status: false}];
-    setMyObjects((prev) => [...prev, {id : crypto.randomUUID(), task : textinput, status: false}]);
+    const newId = crypto.randomUUID()
+    setMyObjects((prev) => [...prev, {id : newId, task : textinput, status: false}]);
+    localStorage.setItem([newId], JSON.stringify({ task: textinput, status: false }))
   };
 
   return (
